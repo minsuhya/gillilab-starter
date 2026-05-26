@@ -1,0 +1,29 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+.env*.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+dist/
+
+# SQLite DB 파일 (디렉토리는 bind mount용으로 유지)
+backend/data/*.db
+
+# uv
+.python-version
+
+# 환경 변수
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AI 도구 세션 데이터 (커밋 금지)
+.omc/
+.openchrome/
