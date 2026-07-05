@@ -40,7 +40,13 @@ make dev     # 실행
 make install
 ```
 
-터미널 2개를 열고 각각 실행합니다.
+한 번에 실행 (권장):
+
+```bash
+make dev-local
+```
+
+또는 터미널 2개를 열고 각각 실행합니다.
 
 ```bash
 # 터미널 1 — Backend (http://localhost:8005)
@@ -92,6 +98,7 @@ gillilab-starter/
 | `make install` | 로컬 의존성 설치 |
 | `make dev-frontend` | Frontend만 로컬 실행 |
 | `make dev-backend` | Backend만 로컬 실행 |
+| `make dev-local` | Backend+Frontend 로컬 동시 실행 (한 터미널) |
 
 ## 환경 변수
 

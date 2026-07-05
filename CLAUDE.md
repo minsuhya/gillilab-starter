@@ -14,6 +14,7 @@ make logs           # 로그 스트리밍
 make install        # 로컬 의존성 설치
 make dev-frontend   # Frontend만 로컬 실행 (포트 3005)
 make dev-backend    # Backend만 로컬 실행 (포트 8005)
+make dev-local       # Backend+Frontend 로컬 동시 실행 (한 터미널, Ctrl+C로 종료)
 ```
 
 ## 접속 주소 (Docker)
