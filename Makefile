@@ -1,4 +1,4 @@
-.PHONY: dev dev-watch build down logs install dev-frontend dev-backend
+.PHONY: dev dev-watch build down logs install dev-frontend dev-backend dev-local
 
 # Docker 환경
 dev:
@@ -26,3 +26,6 @@ dev-frontend:
 
 dev-backend:
 	cd backend && APP_ENV=development CORS_ORIGINS=http://localhost:3005 uv run uvicorn app.main:app --reload --port 8005
+
+dev-local:
+	./scripts/dev-local.sh
