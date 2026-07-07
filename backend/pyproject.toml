@@ -10,6 +10,6 @@ dependencies = [
     "greenlet>=3.5.1",
     "pydantic>=2.13.4",
     "python-multipart>=0.0.29",
-    "sqlmodel>=0.0.38",
+    "sqlmodel>=0.0.39",
     "uvicorn[standard]>=0.48.0",
 ]
