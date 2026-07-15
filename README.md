@@ -113,11 +113,3 @@ gillilab-demo-starter/
 | `APP_ENV` | `production` | `development` 설정 시 Swagger UI 활성화 |
 | `DATABASE_URL` | `sqlite+aiosqlite:///./data/tasks.db` | DB 연결 문자열 |
 | `CORS_ORIGINS` | `http://localhost:3000` | 허용할 CORS origin (콤마 구분) |
-
-## 문서
-
-| 문서 | 내용 |
-|---|---|
-| [docs/gh-guide.md](docs/gh-guide.md) | GitHub CLI(gh) 전반 사용 가이드 |
-| [docs/gh-pr-guide.md](docs/gh-pr-guide.md) | gh로 Pull Request 처리하기 (심화) |
-| [docs/copilot-astronvim-guide.md](docs/copilot-astronvim-guide.md) | AstroNvim에서 CopilotChat.nvim 설정하기 |
