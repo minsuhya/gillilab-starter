@@ -28,7 +28,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_cors_origins,
-    allow_credentials=True,
+    allow_credentials=False,  # 인증·쿠키 미사용 데모 — 자격증명 공유 비활성화
     allow_methods=["*"],
     allow_headers=["*"],
 )

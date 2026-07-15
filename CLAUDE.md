@@ -51,6 +51,12 @@ gillilab-starter/
 
 docker-compose에서는 `APP_ENV=development`, `CORS_ORIGINS=http://localhost:3005` 로 설정되어 있음.
 
+## 문서 (docs/)
+
+- `docs/gh-guide.md` — GitHub CLI(gh) 전반 사용 가이드
+- `docs/gh-pr-guide.md` — gh로 Pull Request 처리하기 (심화)
+- `docs/copilot-astronvim-guide.md` — AstroNvim에서 CopilotChat.nvim 설정하기
+
 ## 주요 규칙
 
 - build=`make build` | test=`make test` (테스트 미구현 시 스킵)
