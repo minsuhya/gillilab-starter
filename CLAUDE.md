@@ -1,4 +1,4 @@
-# gillilab-starter
+# gillilab-demo-starter
 
 화면 녹화 강의용 풀스택 데모 프로젝트. Next.js 15 + FastAPI + SQLite 모노레포.
 
@@ -28,7 +28,7 @@ make dev-local       # Backend+Frontend 로컬 동시 실행 (한 터미널, Ctr
 ## 프로젝트 구조
 
 ```
-gillilab-starter/
+gillilab-demo-starter/
 ├── frontend/               # Next.js 15 (App Router, TypeScript, Tailwind v4)
 │   └── src/app/
 ├── backend/

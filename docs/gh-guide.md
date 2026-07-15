@@ -2,7 +2,7 @@
 
 `gh` 로 GitHub를 터미널에서 다루기 위한 실무 참조 문서. 명령별 핵심 사용법과 이 프로젝트에서 자주 쓰는 흐름을 정리했다.
 
-- 검증 환경: gh 2.96.0, 저장소 `github.com:minsuhya/gillilab-starter`
+- 검증 환경: gh 2.96.0, 저장소 `github.com:minsuhya/gillilab-demo-starter`
 - **PR 상세 사용법은 [gh-pr-guide.md](./gh-pr-guide.md) 참고** — 이 문서는 gh 전반을 다루고, PR은 그쪽에 깊게 정리돼 있다.
 
 > ⚠️ **이 셸의 주의점**: rtk 훅이 `gh ...` → `rtk gh ...` 로 자동 치환한다. 일반 명령은 정상 동작하지만 `--help` 출력은 rtk가 가로챈다. 도움말은 전체 경로 `/opt/homebrew/bin/gh <cmd> --help` 로 확인한다.
@@ -109,7 +109,7 @@ remote 는 alias 를 써서 등록한다: `git@github.com-mmon:mmonstar/repo.git
 
 ```bash
 gh repo create my-app --private --source=. --push   # 로컬을 새 원격 저장소로
-gh repo clone minsuhya/gillilab-starter
+gh repo clone minsuhya/gillilab-demo-starter
 gh repo fork --clone                                 # 포크 후 로컬 클론
 gh repo view                                         # 현재 저장소 정보
 gh repo view --web                                   # 브라우저로 열기
@@ -239,10 +239,10 @@ gh variable list
 
 ```bash
 gh search repos --language typescript --stars ">1000" fastapi
-gh search code "def create_task" --repo minsuhya/gillilab-starter
-gh search issues --state open --label bug --repo minsuhya/gillilab-starter
+gh search code "def create_task" --repo minsuhya/gillilab-demo-starter
+gh search issues --state open --label bug --repo minsuhya/gillilab-demo-starter
 gh search prs --author @me --state merged
-gh search commits "fix: cleanup" --repo minsuhya/gillilab-starter
+gh search commits "fix: cleanup" --repo minsuhya/gillilab-demo-starter
 ```
 
 - 저장소를 넘나드는 검색은 `search`, 한 저장소 안 목록은 `pr list`/`issue list` 가 빠르다.
@@ -265,10 +265,10 @@ gh label clone minsuhya/other-repo                    # 다른 저장소 라벨 
 전용 명령이 없는 작업은 `gh api` 로 REST/GraphQL을 직접 친다. 인증·페이지네이션을 gh가 처리해준다.
 
 ```bash
-gh api repos/minsuhya/gillilab-starter               # REST GET
-gh api repos/minsuhya/gillilab-starter --jq '.stargazers_count'
-gh api -X PATCH repos/minsuhya/gillilab-starter -f description="화면 녹화 강의용 데모"
-gh api repos/minsuhya/gillilab-starter/issues --paginate --jq '.[].title'   # 자동 페이지네이션
+gh api repos/minsuhya/gillilab-demo-starter               # REST GET
+gh api repos/minsuhya/gillilab-demo-starter --jq '.stargazers_count'
+gh api -X PATCH repos/minsuhya/gillilab-demo-starter -f description="화면 녹화 강의용 데모"
+gh api repos/minsuhya/gillilab-demo-starter/issues --paginate --jq '.[].title'   # 자동 페이지네이션
 
 # GraphQL
 gh api graphql -f query='

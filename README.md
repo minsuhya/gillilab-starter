@@ -1,4 +1,4 @@
-# gillilab-starter
+# gillilab-demo-starter
 
 > Next.js 15 + FastAPI + SQLite 풀스택 모노레포 강의 데모 프로젝트
 
@@ -63,7 +63,7 @@ make dev-frontend
 ## 프로젝트 구조
 
 ```
-gillilab-starter/
+gillilab-demo-starter/
 ├── frontend/               # Next.js 15 (App Router)
 │   ├── src/app/            # 페이지 및 컴포넌트
 │   └── Dockerfile

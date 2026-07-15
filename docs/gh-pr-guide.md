@@ -2,7 +2,7 @@
 
 GitHub CLI(`gh`)로 PR을 만들고, 리뷰하고, 병합하는 실무 참조 문서.
 
-- 검증 환경: gh 2.96.0, 저장소 `github.com:minsuhya/gillilab-starter`
+- 검증 환경: gh 2.96.0, 저장소 `github.com:minsuhya/gillilab-demo-starter`
 - PR 지정 방법: **번호**(`123`) · **URL** · **브랜치 이름** 중 아무거나. 생략하면 현재 체크아웃된 브랜치의 PR을 자동으로 찾는다.
 
 > ⚠️ **이 셸의 주의점**: rtk 훅이 `gh ...` → `rtk gh ...` 로 자동 치환한다. 일반 명령은 정상 동작하지만 `--help` 출력은 rtk가 가로채므로, 도움말은 전체 경로 `/opt/homebrew/bin/gh <cmd> --help` 로 확인한다.
