@@ -5,6 +5,10 @@
 화면 녹화 강의에서 사용하는 실습용 스타터 코드입니다.  
 Docker 한 줄로 실행되며, 프론트엔드(Next.js)와 백엔드(FastAPI)가 함께 구성되어 있습니다.
 
+> ⚠️ **로컬 실습 전용 — 공개 서버 배포 금지**
+> 이 프로젝트는 학습·데모 목적입니다. API에 **인증이 없어** 누구나 데이터를 조회·생성·수정·삭제할 수 있고, 개발 모드에서 API 문서(Swagger)가 노출되며, 속도·요청 크기 제한이 없습니다.
+> `localhost`에서만 실행하세요. VPS·클라우드 등 **외부에서 접근 가능한 서버에 그대로 배포하지 마세요.** 실제 서비스로 확장하려면 인증·인가, CORS 제한, 레이트 리밋, 프로덕션 DB를 먼저 추가해야 합니다.
+
 ## 기술 스택
 
 | 영역 | 기술 |
@@ -109,3 +113,11 @@ gillilab-starter/
 | `APP_ENV` | `production` | `development` 설정 시 Swagger UI 활성화 |
 | `DATABASE_URL` | `sqlite+aiosqlite:///./data/tasks.db` | DB 연결 문자열 |
 | `CORS_ORIGINS` | `http://localhost:3000` | 허용할 CORS origin (콤마 구분) |
+
+## 문서
+
+| 문서 | 내용 |
+|---|---|
+| [docs/gh-guide.md](docs/gh-guide.md) | GitHub CLI(gh) 전반 사용 가이드 |
+| [docs/gh-pr-guide.md](docs/gh-pr-guide.md) | gh로 Pull Request 처리하기 (심화) |
+| [docs/copilot-astronvim-guide.md](docs/copilot-astronvim-guide.md) | AstroNvim에서 CopilotChat.nvim 설정하기 |
